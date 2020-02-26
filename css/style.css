@@ -1,0 +1,227 @@
+body{
+	font:20px;
+	padding: 0;
+	margin: 0;
+	font-style:sans-serif;
+	word-spacing: 2px;
+	
+}
+
+h2{
+	color: #202020;
+	text-decoration: underline #800000;
+}
+
+h3{
+	color: #000000;
+	text-decoration: underline #202020;
+}
+
+.container{
+	width:80%;
+	margin:auto;
+	margin-top: 3%;
+	overflow: hidden;
+	padding-left: 3%;
+	background-color: #A9A9A9 ;
+}
+
+header{
+	background-color: #808080;
+	color:white;
+	padding-top: 30px;
+	min-height: 70px;
+	border-bottom:solid #800000;
+}
+
+header #branding{
+	float:left;
+	padding-left: 5%;
+	margin:auto;
+	overflow: hidden;
+}
+
+header #branding h1{
+	margin:0;
+	font-size: 40px;
+}
+
+header .highlight{
+	color: #800000;
+	font-weight: bold;
+}
+
+
+section{
+	padding:2%;
+	font-size: 20px;
+}
+
+/*article*/
+.main-left{
+	float: left;
+	width:45%;
+}
+
+.light{
+  padding:15px;
+  background:grey;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+/*aside*/
+.main-right{
+	float: right;
+	width: 55%;
+
+}
+
+.dark{
+	padding: 15px;
+	background-color: #35424a;
+	color:#ffffff;
+	margin-top: 10px;
+	margin-bottom:10px;
+}
+
+
+/* Image Grid */
+.imgRow{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 1 4px;
+}
+/*Creating 3 equal col */
+.imgCol{
+	flex: 30%;
+	max-width: 30%;
+	padding: 1.5%;
+}
+
+.imgCol img{
+	margin-top: 8px;
+	width:100%;
+}
+
+.imgBox{
+	width: auto;
+	height:auto;
+	text-align: center;
+}
+
+
+
+/* Types and their defination section */
+.types{
+	font-weight: bold;
+	color: #000000;
+	padding: 0.5% 2% ;
+	text-align: center;
+	margin-top: 2%;
+
+}
+.box{
+	width: auto;
+	height:auto;
+	border:solid;
+	text-align: center;
+	padding-left: 4%;
+	padding-right: 4%;
+}
+.column{
+	float: left;
+	width: 40%;
+}
+
+.row::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+a{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.change{
+	color: #2B3856;
+}
+
+
+
+/* UC symptoms & causes */
+/*article*/
+.UCmain-left{
+	float: left;
+	width:65%;
+}
+
+.UClight{
+  padding:15px;
+  background:grey;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
+  height: 400px;
+}
+
+/*aside*/
+.UCmain-right{
+	float: right;
+	width: 35%;
+
+}
+
+
+.UCdark{
+	padding: 15px;
+	background-color: #35424a;
+	color:#ffffff;
+	margin-top: 10px;
+	margin-bottom:10px;
+	height: 400px;
+}
+
+
+/* UC avoid-food & eat-food */
+/*article*/
+.avoid-food{
+	float: left;
+	width:50%;
+}
+
+/*aside*/
+.eat-food{
+	float: right;
+	width: 50%;	
+}
+
+
+
+/*Image slide show */
+.mySlides {
+	display:none;
+	width:50%;
+	height:300px;
+	margin: auto;
+}
+
+
+/*article*/
+.main{
+	float: left;
+	width:35%;
+	text-align: center;
+	padding-right: 0px;
+}
+
+
+/*aside*/
+.side{
+	float: right;
+	width: 65%;
+
+}
