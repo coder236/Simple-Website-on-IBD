@@ -1,64 +1,39 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Crohn's Disease</title>
-	<link rel="stylesheet" href="./css/style.css"></style>
+	<link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
 
-<header>
-	<div>
-		<div id="branding">
+	<header>
+		<nav>
 			<a href="home.html">
-				<h1><span class="highlight">Health</span> Infotech</h1>	
-			</a>	
-		</div>		
-	</div>	
-</header>
+				<h1><span class="highlight">Health</span> Infotech</h1>
+			</a>
+		</nav>
+	</header>
 
-<!-- UC defination , Symptoms -->
-
-<section class="container">
-	<article>
-		<div class="main">
-			<h2>CROHN'S DISEASE</h2>
-			<p style="color: #800000;font-size: 23px;"><b>It affects any part of GI tract that is from the mouth to the anus causing inflammation of multiple layers of the walls.Most often it affects the portion of small intestine.It damages the area next to healthy tissues.</b></p>
+	<!-- UC defination , Symptoms -->
+	<section class="container UCcontainer">
+		<h2>CROHN'S DISEASE</h2>
+		<p>It affects any part of GI tract that is from the mouth to
+			the anus causing inflammation of multiple layers of the walls.Most often it affects the portion
+			of small intestine.It damages the area next to healthy tissues.</p>
+		<div>
+			<img src="./CD_images/1.jpeg">
+			<img src="./CD_images/2.jpeg">
+			<img src="./CD_images/3.jpeg">
+			<img src="./CD_images/4.jpeg">
 		</div>
-	</article>
+	</section>
 
-	<aside>
-		<div class="side">
-			<div>
-				<img class="mySlides" src="./CD_images/1.jpeg">
-				<img class="mySlides" src="./CD_images/2.jpeg">
-				<img class="mySlides" src="./CD_images/3.jpeg">
-				<img class="mySlides" src="./CD_images/4.jpeg">
-			</div>
-			<script>
-				var myIndex = 0;
-				carousel();
-
-				function carousel() {
-				  var i;
-				  var x = document.getElementsByClassName("mySlides");
-				  for (i = 0; i < x.length; i++) {
-				    x[i].style.display = "none";  
-				  }
-				  myIndex++;
-				  if (myIndex > x.length) {myIndex = 1}    
-				  x[myIndex-1].style.display = "block";  
-				  setTimeout(carousel, 3000); // Change image every 3 seconds
-				}
-			</script>
-		</div>
-	</aside>
-</section>
-
-
-<section class="container">
-	<div class="UCmain-left">
-		<article>
-			<div class="UClight">
+	<section class="container S1container">
+		<div class="S1block">
+			<div class="S1left">
 				<h3>SYMPTOMS</h3>
 				<p>Below mentioned symptoms can range from mild to severe.</p>
 				<ul>
@@ -75,15 +50,13 @@
 				</ul>
 				<p>If symptoms mentioned above continuous then You need to See A Doctor.</p>
 			</div>
-		</article>
-	</div>
 
-	<div class="UCmain-right">
-		<aside >
-			<div class="UCdark">
+			<div class="S1right">
 				<h3>CAUSES</h3>
 				<p>
-					Exact cause is unknown but possible cause is <b><i>malfunction of immune system</i></b>.An abnormal response to foreign organisms causes the immune system to attack the cells in the digestive tract.
+					Exact cause is unknown but possible cause is <b><i>malfunction of immune system</i></b>.An
+					abnormal response to foreign organisms causes the immune system to attack the cells in the
+					digestive tract.
 				</p>
 				<p>
 					<b><i>Heredity</i></b> is common factor in causing Crohn's disease.
@@ -92,33 +65,28 @@
 					<b><i>Smoking</i></b> is most important risk factor for Crohn's disease.
 				</p>
 			</div>
-		</aside>
-	</div>
-
-</section>	
+		</div>
+	</section>
 
 
-<section class="container">
+	<section class="container S2_UC">
+		<h3>Future Complications</h3>
+		<ul>
+			<li>Bowel Obstruction, affecting the thickness of intestinal wall and blocking flow of digestive content.
+			</li>
+			<li>Ulcers, anywhere on digestive tract including mouth and anus.</li>
+			<li>Fistulas between intestine and skin, in abdomen, into bladder or vagina and soon.</li>
+			<li>Anal Fissure, is small tears in tissue or around skin that lines the anus.</li>
+			<li>Bone loss(Osteoporosis)</li>
+			<li>Malnutrition</li>
+		</ul>
+	</section>
 
-	<h3>Future Complications</h3>
-	<ul>
-		<li>Bowel Obstruction, affecting the thickness of intestinal wall and blocking flow of digestive content.</li>
-		<li>Ulcers, anywhere on digestive tract including mouth and anus.</li>
-		<li>Fistulas between intestine and skin, in abdomen, into bladder or vagina and soon.</li>
-		<li>Anal Fissure, is small tears in tissue or around skin that lines the anus.</li>
-		<li>Bone loss(Osteoporosis)</li>
-		<li>Malnutrition</li>
-	</ul>
 
-</section>
-
-
-<!-- food to avoid & eat -->
-<section class="container">
-
-	<div class="avoid-food">
-		<article>
-			<div class="UClight">
+	<!-- food to avoid & eat -->
+	<section class="container S1container">
+		<div class="S1block">
+			<div class="S1left">
 				<h3>Foods to Avoid</h3>
 				<ul>
 					<li>alcohol (mixed drinks, beer, wine)</li>
@@ -128,58 +96,58 @@
 					<li>dairy products (if lactose intolerant)</li>
 					<li>gas-producing foods (lentils, beans, legumes, cabbage, broccoli, onions)</li>
 					<li>nuts and seeds (peanut butter, other nut butters)</li>
-					<li>foods high in fiber</li> 
+					<li>foods high in fiber</li>
 					<li>whole grains and bran</li>
 					<li>spicy foods</li>
-				    <li>fatty foods (fried foods)</li>
+					<li>fatty foods (fried foods)</li>
 					<li>raw fruits, vegetables</li>
-				    <li>red meat and pork</li>
+					<li>red meat and pork</li>
 				</ul>
 			</div>
-		</article>
-	</div>
 
-	<div class="eat-food">
-		<aside>
-			<div class="UCdark">
+			<div class="S1right">
 				<h3>Food To Enjoy</h3>
 				<ul>
-	  				<li>Plain crackers</li>					
-				 	<li>Eggs</li>
-				    <li>Tofu</li>
-				    <li>Banana and Cantalope</li>
-				    <li>Aspargus tips, mushroom and Squash</li> 
-				    <li>Yogurt, kimchi, miso, sauerkraut, and tempeh</li>
-				    <li>White rice</li>
-				    <li>White bread without seeds</li>
-				    <li>cooked vegetables without skins or seeds</li>
-				    <li>Lean Meat</li>
-				    <li>Oily Fish</li>
-				    <li>Green Tea</li>
-				    <li>Oatmeal</li>
-				    <li>Turmeric</li>
+					<li>Plain crackers</li>
+					<li>Eggs</li>
+					<li>Tofu</li>
+					<li>Banana and Cantalope</li>
+					<li>Aspargus tips, mushroom and Squash</li>
+					<li>Yogurt, kimchi, miso, sauerkraut, and tempeh</li>
+					<li>White rice</li>
+					<li>White bread without seeds</li>
+					<li>cooked vegetables without skins or seeds</li>
+					<li>Lean Meat</li>
+					<li>Oily Fish</li>
+					<li>Green Tea</li>
+					<li>Oatmeal</li>
+					<li>Turmeric</li>
 				</ul>
 			</div>
-		</aside>
+		</div>
+	</section>
+
+
+	<!--Dietary measures -->
+	<section class="container S2_UC">
+		<h3>Dietary Measures to Take</h3>
+		<ul>
+			<li>Eat small meals (rather then 2-3 large meal have 5-6 small meals)</li>
+			<li>Food rich in thiamine, iron, folate and vitmain A,C,D</li>
+			<li>Drink Plenty of water(8-10 glass per day)</li>
+			<li>Low fiber rich fruits peeled or poached</li>
+			<li>Do weight-bearing exercise for joints,moderate aerobic exercise, moderate pace walk, resistance training
+				and yoga to relieve stress.</li>
+		</ul>
+	</section>
+
+	<section class="container view_more">
+		<h4>Read About Ulcerative Colitis Disease</h4> <a href="ulcerative_colitis.html"><button
+				class="btn btn-primary">Read Now</button></a>
+	</section>
+	<div style="position: fixed; width:fit-content; bottom: 10px;  right:10px;">
+		<a href="home.html"><button class="btn btn-primary">Home Page</button></a>
 	</div>
-
-</section>
-
-
-<!--Dietary measures -->
-<section class="container">
-	<h3>Dietary Measures to Take</h3>
-	<ul>
-	    <li>Eat small meals (rather then 2-3 large meal have 5-6 small meals)</li>
-	    <li>Food rich in thiamine, iron, folate and vitmain A,C,D</li>
-	    <li>Drink Plenty of water(8-10 glass per day)</li>
-	    <li>Low fiber rich fruits peeled or poached</li>
-	    <li>Do weight-bearing exercise for joints,moderate aerobic exercise, moderate pace walk, resistance training and yoga to relieve stress.</li>
-	</ul>
-</section>
-
-
-<div style="margin-top: 3%; margin-bottom: 3%;"></div>
-
 </body>
+
 </html>

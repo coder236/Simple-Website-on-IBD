@@ -1,65 +1,40 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Ulcerative Colitis</title>
-	<link rel="stylesheet" href="./css/style.css"></style>
+	<link rel="stylesheet" href="./css/style.css">
+	</style>
 </head>
+
 <body>
-
-<header>
-	<div>
-		<div id="branding">
+	<header>
+		<nav>
 			<a href="home.html">
-				<h1><span class="highlight">Health</span> Infotech</h1>	
-			</a>	
-		</div>		
-	</div>	
-</header>
+				<h1><span class="highlight">Health</span> Infotech</h1>
+			</a>
+		</nav>
+	</header>
 
-<!-- UC defination , Symptoms -->
+	<!-- UC defination , Symptoms -->
 
-<section class="container">
-	<article>
-		<div class="main">
-			<h2>ULCERATIVE  COLITIS</h2>
-			<p style="color: #800000;font-size: 23px;"><b>It occurs in the large intestine(colon) and the rectum causing redness and swelling oin the innermost layer and damaging the healthy tissues .It can last for few weeks or for several months.</b></p>	
+	<section class="container UCcontainer">
+		<h2>ULCERATIVE COLITIS</h2>
+		<p>It occurs in the large intestine(colon) and the rectum
+			causing redness and swelling oin the innermost layer and damaging the healthy tissues .It can
+			last for few weeks or for several months.</p>
+		<div>
+			<img src="./UC_images/1.png">
+			<img src="./UC_images/2.jpeg">
+			<img src="./UC_images/3.jpg">
 		</div>
-	</article>
+	</section>
 
-	<aside>
-		<div class="side">
-			<div>
-				<img class="mySlides" src="./UC_images/1.png">
-				<img class="mySlides" src="./UC_images/2.jpeg">
-				<img class="mySlides" src="./UC_images/3.jpg">
-			</div>
-			<script>
-				var myIndex = 0;
-				carousel();
-
-				function carousel() {
-				  var i;
-				  var x = document.getElementsByClassName("mySlides");
-				  for (i = 0; i < x.length; i++) {
-				    x[i].style.display = "none";  
-				  }
-				  myIndex++;
-				  if (myIndex > x.length) {myIndex = 1}    
-				  x[myIndex-1].style.display = "block";  
-				  setTimeout(carousel, 3000); // Change image every 3 seconds
-				}
-			</script>
-		</div>
-	</aside>
-
-</section>
-
-<section class="container">
-	<div class="UCmain-left">
-		<article>
-			<div class="UClight">
-				<h3>SYMPTOMS</h3>
-				<p>If below mentioned symptoms may come and go up to a year, thus these occurrences are called flare-ups.</p>
+	<section class="container S1container">
+		<div class="S1block">
+			<div class="S1left">
+				<h3>SYMPTOMS OF IBD </h3>
 				<ul>
 					<li>Diarrhea</li>
 					<li>Abdominal Pain</li>
@@ -73,112 +48,105 @@
 				</ul>
 				<p>If symptoms mentioned above continuous then You need to See A Doctor.</p>
 			</div>
-		</article>
-	</div>
 
-	<div class="UCmain-right">
-		<aside >
-			<div class="UCdark">
+			<div class="S1right">
 				<h3>CAUSES</h3>
-				<p>Exact cause is unknown but possible cause is <b><i>Malfunction of immune system</i></b>.An abnormal response to foreign organisms causes the immune system to attack the cells in the digestive tract.
+				<p>Exact cause is unknown but possible cause is <b><i>Malfunction of immune system</i></b>.An
+					abnormal response to foreign organisms causes the immune system to attack the cells in the
+					digestive tract.
 				</p>
 				<p>
-				Although <b><i>Stress</i></b> doesn't cause inflammatory bowel disease but it can make your signs and symptoms worse and may trigger flare-ups.
+					Although <b><i>Stress</i></b> doesn't cause inflammatory bowel disease but it can make your
+					signs and symptoms worse and may trigger flare-ups.
 				</p>
-				<b><i>Heredity</i></b> is also one of the common role in causing ulcerative colitis.
+				<p>
+					<b>Heredity</b> is also one of the common role in causing ulcerative colitis.
 				</p>
 			</div>
-		</aside>
-	</div>
+		</div>
+	</section>
 
-</section>	
+	<section class="container S2_UC">
+		<h3>Future Complications</h3>
+		<ul>
+			<li>Severe bleeding</li>
+			<li>A hole in the colon(Perforated colon)</li>
+			<li>Severe dehydration</li>
+			<li>Liver Disease</li>
+			<li>Bone loss(Osteoporosis)</li>
+			<li>Inflammation of skin, joints and eyes</li>
+			<li>An increased risk of colon cancer</li>
+			<li>Increased risk of blood clots in veins and ateries</li>
+		</ul>
 
-
-
-
-	
-<section class="container">
-
-	<h3>Future Complications</h3>
-	<ul>
-		<li>Severe bleeding</li>
-		<li>A hole in the colon(Perforated colon)</li>
-		<li>Severe dehydration</li>
-		<li>Liver Disease</li>
-		<li>Bone loss(Osteoporosis)</li>
-		<li>Inflammation of skin, joints and eyes</li>
-		<li>An increased risk of colon cancer</li>
-		<li>Increased risk of blood clots in veins and ateries</li>
-	</ul>
-
-</section>
+	</section>
 
 
-<!-- food to avoid & eat -->
-<section class="container">
-
-	<div class="avoid-food">
-		<article>
-			<div class="UClight">
+	<!-- food to avoid & eat -->
+	<section class="container S1container">
+		<div class="S1block">
+			<div class="S1left">
 				<h3>Foods to Avoid</h3>
 				<ul>
 					<li>Limit Dairy Products</li>
 					<li>Limit high Fiber foods like
 						<ul>
 							<li type="circle">fruits such as berries, pears, melon and oranges</li>
-							<li type="circle">vegetables such as broccoli, cauliflower, peas, beans, pluses, carrots, potatoes with skin and sweetcorns</li>
+							<li type="circle">vegetables such as broccoli, cauliflower, peas, beans, pluses,
+								carrots, potatoes with skin and sweetcorns</li>
 							<li type="circle">whole grains such as barley, rye, cereals, oats, bread</li>
 							<li type="circle">nuts and seeds </li>
-						</ul> 
-				    <li>Limit spicy food</li>
+						</ul>
+					<li>Limit spicy food</li>
 					<li>Limit Alcohol</li>
-				    <li>Limit Caffeine</li>
+					<li>Limit Caffeine</li>
 				</ul>
 			</div>
-		</article>
-	</div>
 
-	<div class="eat-food">
-		<aside>
-			<div class="UCdark">
+			<div class="S1right">
+
 				<h3>Food To Enjoy</h3>
 				<ul>
 					<li>Applesauce</li>
-				    <li>Salmon</li>
-				    <li>Avocados</li>
-				 	<li>Eggs</li>
-				    <li>Tofu</li>
-				    <li>Banana and Cantalope</li>
-				    <li>Aspargus tips and Squash</li> 
-				    <li>Yogurt, kimchi, miso, sauerkraut, and tempeh</li>
-				    <li>White rice</li>
-				    <li>White bread without seeds</li>
-				    <li>cooked vegetables without skins or seeds</li>
-				    <li>Vegetable soups with no spice</li>
-				    <li>Peanut butter instead of nuts</li>
-				    <li>Instant Oatmeal with no additional flavours</li>
+					<li>Salmon</li>
+					<li>Avocados</li>
+					<li>Eggs</li>
+					<li>Tofu</li>
+					<li>Banana and Cantalope</li>
+					<li>Aspargus tips and Squash</li>
+					<li>Yogurt, kimchi, miso, sauerkraut, and tempeh</li>
+					<li>White rice</li>
+					<li>White bread without seeds</li>
+					<li>cooked vegetables without skins or seeds</li>
+					<li>Vegetable soups with no spice</li>
+					<li>Peanut butter instead of nuts</li>
+					<li>Instant Oatmeal with no additional flavours</li>
 				</ul>
 			</div>
-		</aside>
+		</div>
+	</section>
+
+
+	<!--Dietary measures -->
+	<section class="container S2_UC">
+		<h3>Dietary Measures to Take</h3>
+		<ul>
+			<li>Do Exercises like Yoga, Relaxation techinques,Brisk walk</li>
+			<li>Eat small meals (rather then 2-3 large meal have 5-6 small meals)</li>
+			<li>Drink Plenty of water(8-10 glass per day)</li>
+			<li>When preparing food stick to methods like boiling, grilling,steaming or poaching</li>
+			<li>Eat food rich in potassium, folate, magnesium, calcium, iron, probiotics and low-fibre</li>
+		</ul>
+	</section>
+
+	<section class="container view_more">
+		<h4>Read About Crohns Disease</h4> <a href="crohns_disease.html"><button class="btn btn-primary">Read Now</button></a>
+	</section>
+
+	<div style="position: fixed; width:fit-content; bottom: 10px;  right:10px;">
+		<a href="home.html"><button class="btn btn-primary">Home Page</button></a>
 	</div>
 
-</section>
-
-
-<!--Dietary measures -->
-<section class="container">
-	<h3>Dietary Measures to Take</h3>
-	<ul>
-	    <li>Do Exercises like Yoga, Relaxation techinques,Brisk walk</li>
-	    <li>Eat small meals (rather then 2-3 large meal have 5-6 small meals)</li>
-	    <li>Drink Plenty of water(8-10 glass per day)</li>
-	    <li>When preparing food stick to methods like boiling, grilling,steaming or poaching</li>
-	    <li>Eat food rich in potassium, folate, magnesium, calcium, iron, probiotics and low-fibre</li>
-	</ul>
-</section>
-
-
-<div style="margin-top: 3%; margin-bottom: 3%;"></div>
-
 </body>
+
 </html>

@@ -1,227 +1,117 @@
-body{
-	font:20px;
-	padding: 0;
-	margin: 0;
-	font-style:sans-serif;
-	word-spacing: 2px;
-	
+@import 'utilities.css';
+.S1block {
+	margin-top: 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 30px;
 }
 
-h2{
-	color: #202020;
-	text-decoration: underline #800000;
+.S1left, .S1right {
+	padding: 20px;
+	border: 1px solid #b3b3b3;
+	border-radius: 3px;
 }
 
-h3{
-	color: #000000;
-	text-decoration: underline #202020;
+.S1left ul, .S1right ul, .S2_UC ul {
+	font-size: 16px;
+	padding: 0 30px;
 }
 
-.container{
-	width:80%;
-	margin:auto;
-	margin-top: 3%;
-	overflow: hidden;
-	padding-left: 3%;
-	background-color: #A9A9A9 ;
+.S1left ul li, .S1right ul li, .S2_UC ul li {
+	padding: 5px 0;
+	color: #1a1a4d;
 }
 
-header{
-	background-color: #808080;
-	color:white;
-	padding-top: 30px;
-	min-height: 70px;
-	border-bottom:solid #800000;
+.S1left p {
+	text-align: left;
 }
 
-header #branding{
-	float:left;
-	padding-left: 5%;
-	margin:auto;
-	overflow: hidden;
+/*Section 2*/
+
+.S2block {
+	margin-top: 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 30px;
+	grid-auto-rows: 250px;
 }
 
-header #branding h1{
-	margin:0;
-	font-size: 40px;
+.S2block img {
+	height: 100%;
+	width: 100%;
+	border-radius: 8px;
 }
 
-header .highlight{
-	color: #800000;
-	font-weight: bold;
-}
+/* UC Page*/
 
-
-section{
-	padding:2%;
-	font-size: 20px;
-}
-
-/*article*/
-.main-left{
-	float: left;
-	width:45%;
-}
-
-.light{
-  padding:15px;
-  background:grey;
-  color:#ffffff;
-  margin-top:10px;
-  margin-bottom:10px;
-}
-
-/*aside*/
-.main-right{
-	float: right;
-	width: 55%;
-
-}
-
-.dark{
-	padding: 15px;
-	background-color: #35424a;
-	color:#ffffff;
-	margin-top: 10px;
-	margin-bottom:10px;
-}
-
-
-/* Image Grid */
-.imgRow{
+.UCcontainer div {
 	display: flex;
-	flex-wrap: wrap;
-	padding: 1 4px;
-}
-/*Creating 3 equal col */
-.imgCol{
-	flex: 30%;
-	max-width: 30%;
-	padding: 1.5%;
+	justify-content: space-between;
+	height: 300px;
+	overflow: hidden;
+	column-gap: 30px;
 }
 
-.imgCol img{
-	margin-top: 8px;
-	width:100%;
+.UCcontainer div img {
+	margin-top: 20px;
+	height: 100%;
+	width: 350px;
+	border-radius: 5px;
+	overflow: hidden;
 }
 
-.imgBox{
-	width: auto;
-	height:auto;
+.S2_UC {
+	padding: 30px 50px;
+}
+
+.view_more {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.view_more h4 {
 	text-align: center;
+	font-size: 18px;
+	margin-bottom: 20px;
 }
 
-
-
-/* Types and their defination section */
-.types{
-	font-weight: bold;
-	color: #000000;
-	padding: 0.5% 2% ;
-	text-align: center;
-	margin-top: 2%;
-
-}
-.box{
-	width: auto;
-	height:auto;
-	border:solid;
-	text-align: center;
-	padding-left: 4%;
-	padding-right: 4%;
-}
-.column{
-	float: left;
-	width: 40%;
+@media (min-width: 768px) and (max-width: 991px) {
+	.S2block {
+		column-gap: 20px;
+	}
+	.S1block {
+		grid-template-columns: 1fr;
+		row-gap: 30px;
+	}
 }
 
-.row::after{
-	content: "";
-	display: table;
-	clear: both;
-}
-
-a{
-	text-decoration: none;
-	cursor: pointer;
-}
-
-.change{
-	color: #2B3856;
-}
-
-
-
-/* UC symptoms & causes */
-/*article*/
-.UCmain-left{
-	float: left;
-	width:65%;
-}
-
-.UClight{
-  padding:15px;
-  background:grey;
-  color:#ffffff;
-  margin-top:10px;
-  margin-bottom:10px;
-  height: 400px;
-}
-
-/*aside*/
-.UCmain-right{
-	float: right;
-	width: 35%;
-
-}
-
-
-.UCdark{
-	padding: 15px;
-	background-color: #35424a;
-	color:#ffffff;
-	margin-top: 10px;
-	margin-bottom:10px;
-	height: 400px;
-}
-
-
-/* UC avoid-food & eat-food */
-/*article*/
-.avoid-food{
-	float: left;
-	width:50%;
-}
-
-/*aside*/
-.eat-food{
-	float: right;
-	width: 50%;	
-}
-
-
-
-/*Image slide show */
-.mySlides {
-	display:none;
-	width:50%;
-	height:300px;
-	margin: auto;
-}
-
-
-/*article*/
-.main{
-	float: left;
-	width:35%;
-	text-align: center;
-	padding-right: 0px;
-}
-
-
-/*aside*/
-.side{
-	float: right;
-	width: 65%;
-
+@media (max-width: 767px) {
+	.S2block {
+		column-gap: 20px;
+		grid-template-columns: 1fr;
+		row-gap: 30px;
+		grid-auto-rows: 170px;
+	}
+	.S1block {
+		grid-template-columns: 1fr;
+		row-gap: 30px;
+	}
+	.S3block {
+		grid-template-columns: 1fr;
+		row-gap: 30px;
+	}
+	.UCcontainer div {
+		flex-direction: column;
+		height: auto;
+		row-gap: 20px;
+	}
+	.UCcontainer div img {
+		width: 100%;
+		height: 200px;
+	}
+	.S1left ul, .S1right ul, .S2_UC ul {
+		padding: 0 0 0 10px;
+	}
 }
